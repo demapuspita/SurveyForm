@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Survey Peserta Magang</h1>
+        <p id="description" class="description text-center">
+          MSIB - Kampus Merdeka Batch #4
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="progressbar">
+          <div class="progress" id="progress"></div>
+          <div class="progress-step progress-step-active" data-title="Identitas"></div>
+          <div class="progress-step" data-title="Pertanyaan"></div>
+        </div>
+        <hr>
+        <div class="form-step form-step-active">
+          <div class="form-group">
+            <label id="name-label" for="name">Nama</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Masukkan Nama Anda" required/>
+          </div>
+          <hr>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Masukkan Email Anda" required/>
+          </div>
+          <hr>
+          <div class="form-group">
+            <label id="nohp-label" for="nohp"> No. Handphone</span></label>
+            <input type="text" name="nohp" id="nohp" class="form-control" placeholder="Masukkan No. Handphone"/>
+          </div>
+          <hr>
+          <div class="form-group">
+            <label id="univ-label" for="univ"> Asal Universitas</span></label>
+            <input type="text" name="univ" id="univ" class="form-control" placeholder="Masukkan Asal Universitas"/>
+          </div>
+          <hr>
+          <div class="form-group">
+            <label id="prodi-label" for="prodi"> Program Studi</span></label>
+            <input type="text" name="prodi" id="prodi" class="form-control" placeholder="Masukkan Program Studi"/>
+          </div>
+          <hr>
+          <div class="form-group">
+            <p>Semester yang ditempuh saat akan melaksanakan program Magang</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Pilih semester</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <a href="#" class="btn btn-next btn-danger shadow lift me-1 mb-3">Berikutnya</a>
+          </div>
+        </div>
+        
+        <div class="form-step">
+          <div class="form-group">
+            <p>Apakah Anda bersedia untuk bekerja secara on-site?</p>
+            <label><input name="user-recommend" value="ya" type="radio" class="input-radio" checked/>Ya</label>
+            <label><input name="user-recommend" value="tidak" type="radio" class="input-radio" checked/>Tidak</label>
+          </div>
+          <hr>
+          <div class="form-group">
+            <p>Posisi apa yang Anda inginkan? <br> <span class="clue">(Dapat pilih lebih dari satu)</span></p>
+            <label>
+              <input name="prefer" value="front-end-developer" type="checkbox" class="input-checkbox"/>Front-end Developer
+            </label>
+            <label>
+              <input name="prefer" value="back-end-developer" type="checkbox" class="input-checkbox"/>Back-end Developer
+            </label>
+            <label>
+              <input name="prefer" value="data-science" type="checkbox" class="input-checkbox"/>Data Science
+            </label>
+            <label>
+              <input name="prefer" value="bussiness-development" type="checkbox" class="input-checkbox"/>Bussiness Development
+            </label>
+            <label>
+              <input name="prefer" value="quality-assurance" type="checkbox" class="input-checkbox"/>Quality Assurance
+            </label>
+            <label>
+              <input name="prefer" value="product-management" type="checkbox" class="input-checkbox"/>Product Management
+            </label>
+            <label>
+              <input name="prefer" value="hr-project-intern" type="checkbox" class="input-checkbox"/>HR Project Intern
+            </label>
+            <label>
+              <input name="prefer" value="ui-ux-designer" type="checkbox" class="input-checkbox"/>UI/UX Designer
+            </label>
+            <label>
+              <input name="prefer" value="it-application-office" type="checkbox" class="input-checkbox"/>IT Application Officer
+            </label>
+            <label>
+              <input name="prefer" value="franchise-finance" type="checkbox" class="input-checkbox"/>Franchise Finance
+            </label>
+            <label>
+              <input name="prefer" value="business-support" type="checkbox" class="input-checkbox"/>Business Support
+            </label>
+          </div>
+          <hr>
+          <div class="form-group">
+            <label>Alasan ingin mengikuti program MSIB</label>
+            <textarea id="komentar" class="input-textarea" name="komentar" placeholder="Tulis alasan Anda di sini"></textarea>
+          </div>
+
+          <div class="submit-form">
+            <a href="#" class="btn btn-prev btn-danger shadow lift me-1 mb-3">Kembali</a>
+            <a href="index.html" class="btn btn-next btn-danger shadow lift me-1 mb-3">Selesai</a>
+          </div>
+        </div>
+        
+        
+      </form>
+    </div>
+    <script src="process.js"></script>
+  </body>
+</html>
